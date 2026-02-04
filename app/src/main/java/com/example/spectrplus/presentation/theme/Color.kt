@@ -1,4 +1,4 @@
-package com.example.spectrplus.ui.theme
+package com.example.spectrplus.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
