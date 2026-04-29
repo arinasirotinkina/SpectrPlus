@@ -24,6 +24,7 @@ import com.example.spectrplus.data.repository.education.MaterialRepositoryImpl
 import com.example.spectrplus.data.repository.profile.PlanRepositoryImpl
 import com.example.spectrplus.data.repository.profile.ProfileRepositoryImpl
 import com.example.spectrplus.data.repository.education.VideoRepositoryImpl
+import com.example.spectrplus.data.repository.social.UserRepositoryImpl
 import com.example.spectrplus.domain.repository.education.ArticleRepository
 import com.example.spectrplus.domain.repository.auth.AuthRepository
 import com.example.spectrplus.domain.repository.profile.SpecialistRepository
@@ -34,6 +35,7 @@ import com.example.spectrplus.domain.repository.education.MaterialRepository
 import com.example.spectrplus.domain.repository.profile.PlanRepository
 import com.example.spectrplus.domain.repository.profile.ProfileRepository
 import com.example.spectrplus.domain.repository.education.VideoRepository
+import com.example.spectrplus.domain.repository.social.UserRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -210,6 +212,13 @@ object AppModule {
         api: ChatApi,
     ): ChatRepository {
         return ChatRepositoryImpl(api)
+    }
+
+    @Provides
+    fun provideUserRepository(
+        api: UserApi
+    ) : UserRepository {
+        return UserRepositoryImpl(api)
     }
 }
 //string@gmail.com

@@ -11,7 +11,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.togetherWith
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import com.example.spectrplus.core.navigation.NavGraph
+import com.example.spectrplus.core.ui.NavGraph
 import com.example.spectrplus.presentation.screen.SplashScreen
 import com.example.spectrplus.presentation.theme.SpectrPlusTheme
 import dagger.hilt.android.AndroidEntryPoint

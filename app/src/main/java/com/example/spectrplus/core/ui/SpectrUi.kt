@@ -93,7 +93,7 @@ object SpectrLabels {
     )
 
     val materialCategories = linkedMapOf(
-        "SCHEDULES" to "Расписания",
+        "VISUAL_SCHEDULE" to "Расписания",
         "PECS" to "Карточки PECS",
         "CHECKLISTS" to "Чек-листы"
     )
